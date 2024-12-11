@@ -1,4 +1,4 @@
-name: stactools-gedi-calval-copc
+name: stactools-panama-copc
 channels:
   - conda-forge
   - defaults

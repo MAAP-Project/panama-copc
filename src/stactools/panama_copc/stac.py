@@ -5,8 +5,8 @@ from pystac import Asset, Collection, Item
 from pystac.extensions.item_assets import AssetDefinition, ItemAssetsExtension
 from pystac.extensions.pointcloud import PointcloudExtension
 from pystac.extensions.projection import ProjectionExtension
-from stactools.gedi_calval_copc import constants as c
-from stactools.gedi_calval_copc.metadata import (
+from stactools.panama_copc import constants as c
+from stactools.panama_copc.metadata import (
     Metadata,
     convert_to_copc,
     fill_pointcloud_metadata,
@@ -28,8 +28,8 @@ def create_collection() -> Collection:
     """
 
     collection = Collection(
-        id="GEDI_CalVal_Lidar_COPC",
-        title="GEDI CalVal Lidar COPC",
+        id="Panama_COPC",
+        title="Panama COPC",
         description=c.DESCRIPTION,
         extent=c.EXTENT,
         stac_extensions=[
@@ -45,7 +45,7 @@ def create_collection() -> Collection:
         "copc.laz": AssetDefinition(
             {
                 "title": "COPC LAZ file",
-                "description": "Cloud Optimized Point Cloud (COPC) converted GEDI CalVal Airborne Lidar LAS data.",
+                "description": "Cloud Optimized Point Cloud (COPC)",
                 "type": "application/vnd.laszip+copc",
                 "roles": ["data"],
             }
@@ -90,7 +90,7 @@ def create_item(source: str, destination: str, copc: bool = False) -> Item:
         Asset(
             title="COPC LAZ file",
             media_type="application/vnd.laszip+copc",
-            description="Cloud Optimized Point Cloud (COPC) converted GEDI CalVal Airborne Lidar LAS data.",
+            description="Cloud Optimized Point Cloud (COPC)",
             roles=["data"],
             href=source,
         ),

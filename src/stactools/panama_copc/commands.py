@@ -2,24 +2,24 @@ import logging
 
 import click
 from click import Command, Group
-from stactools.gedi_calval_copc import stac
+from stactools.panama_copc import stac
 
-# from stactools.gedi_calval_copc.metadata import convert_to_copc
+# from stactools.panama.metadata import convert_to_copc
 
 logger = logging.getLogger(__name__)
 
 
-def create_gedicalvalcopc_command(cli: Group) -> Command:
-    """Creates the stactools-gedi-calval-copc command line utility."""
+def create_panamacopc_command(cli: Group) -> Command:
+    """Creates the stactools-panama-copc command line utility."""
 
     @cli.group(
-        "gedicalvalcopc",
-        short_help=("Commands for working with stactools-gedi-calval-copc"),
+        "panamacopc",
+        short_help=("Commands for working with stactools-panama-copc"),
     )
-    def gedicalvalcopc() -> None:
+    def panamacopc() -> None:
         pass
 
-    @gedicalvalcopc.command(
+    @panamacopc.command(
         "create-collection",
         short_help="Creates a STAC collection",
     )
@@ -34,7 +34,7 @@ def create_gedicalvalcopc_command(cli: Group) -> Command:
         collection.set_self_href(destination)
         collection.save_object()
 
-    @gedicalvalcopc.command("create-item", short_help="Create a STAC item")
+    @panamacopc.command("create-item", short_help="Create a STAC item")
     @click.argument("source")
     @click.argument("destination")
     @click.option("-copc", "--copc", is_flag=True, help="Convert source to COPC format")
@@ -54,4 +54,4 @@ def create_gedicalvalcopc_command(cli: Group) -> Command:
 
         item.save_object(dest_href=item_path)
 
-    return gedicalvalcopc
+    return panamacopc

@@ -3,14 +3,14 @@
 import shutil
 from pathlib import Path
 
-import stactools.gedi_calval_copc.stac
+import stactools.panama_copc.stac
 from pystac import CatalogType
 
 root = Path(__file__).parents[1]
 examples = root / "examples"
 
-collection = stactools.gedi_calval_copc.stac.create_collection()
-item = stactools.gedi_calval_copc.stac.create_item(
+collection = stactools.panama_copc.stac.create_collection()
+item = stactools.panama_copc.stac.create_item(
     source=str(
         root
         / "tests"

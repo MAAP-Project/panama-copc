@@ -17,6 +17,6 @@ will be reflected in the execution.
 
 if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
     docker run --rm -it \
-        -v "$(pwd)":/opt/stactools-gedi-calval-copc \
-        stactools-packages/gedi-calval-copc:dev "${@}"
+        -v "$(pwd)":/opt/stactools-panama-copc \
+        stactools-packages/panama-copc:dev "${@}"
 fi

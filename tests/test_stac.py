@@ -1,5 +1,5 @@
-from stactools.gedi_calval_copc import constants as c
-from stactools.gedi_calval_copc import stac
+from stactools.panama_copc import constants as c
+from stactools.panama_copc import stac
 
 from . import test_data
 
@@ -10,8 +10,8 @@ def test_create_collection() -> None:
 
     collection = stac.create_collection()
     collection.set_self_href(None)  # required for validation to pass
-    assert collection.id == "GEDI_CalVal_Lidar_COPC"
-    assert collection.title == "GEDI CalVal Lidar COPC"
+    assert collection.id == "PANAMA_COPC"
+    assert collection.title == "PANAMA COPC"
     assert collection.extent == c.EXTENT
     collection.validate()
 

@@ -15,7 +15,7 @@ Steps to reproduce the behavior:
 
 > Ex.
 >
-> 1. Install stactools-gedi-calval-copc
+> 1. Install stactools-panama-copc
 > 2. Run `scripts/test`
 > 3. See error
 

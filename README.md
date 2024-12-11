@@ -1,8 +1,8 @@
-# stactools-gedi-calval-copc
+# stactools-panama-copc
 
-- Name: gedi-calval-copc
-- Package: `stactools.gedi_calval_copc`
-- [stactools-gedi-calval-copc on PyPI](https://pypi.org/project/stactools-gedi-calval-copc/)
+- Name: panama-copc
+- Package: `stactools.panama_copc`
+- [stactools-panama-copc on PyPI](https://pypi.org/project/stactools-panama-copc/)
 - Owner: @jjfrench @omshinde
 - STAC extensions used:
   - [proj](https://github.com/stac-extensions/projection/)
@@ -16,7 +16,7 @@
 ## Installation
 
 ```shell
-pip install stactools-gedi-calval-copc
+pip install stactools-panama-copc
 ```
 
 ## Command-line usage
@@ -26,8 +26,8 @@ Description of the command line functions
 For generating STAC items from COPC files, use the following command:
 
 ```shell
-stac gedicalvalcopc create-item <source> <destination>
-stac gedicalvalcopc create-item tests/data/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.copc.laz examples
+stac panamacopc create-item <source> <destination>
+stac panamacopc create-item tests/data/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.copc.laz examples
 ```
 
 For converting LAS files to COPC.LAZ, use the '--copc' flag
@@ -35,11 +35,11 @@ to first generate the COPC file and then generate the STAC item
 using the COPC.LAZ destination location:
 
 ```shell
-stac gedicalvalcopc create-item <source> <destination> --copc
-stac gedicalvalcopc create-item tests/data/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.las examples -copc
+stac panamacopc create-item <source> <destination> --copc
+stac panamacopc create-item tests/data/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.las examples -copc
 ```
 
-Use `stac gedi-calval-copc --help` to see all subcommands and options.
+Use `stac panama-copc --help` to see all subcommands and options.
 
 ## Contributing
 

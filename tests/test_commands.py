@@ -3,11 +3,11 @@ from pathlib import Path
 from click import Group
 from click.testing import CliRunner
 from pystac import Collection, Item
-from stactools.gedi_calval_copc.commands import create_gedicalvalcopc_command
+from stactools.panama_copc.commands import create_panamacopc_command
 
 from . import test_data
 
-command = create_gedicalvalcopc_command(Group())
+command = create_panamacopc_command(Group())
 
 
 def test_create_collection(tmp_path: Path) -> None:

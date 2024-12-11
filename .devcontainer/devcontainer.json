@@ -10,7 +10,7 @@
         // Currently ignored
         "VARIANT": "3.10",
         // Options
-        "DOCKER_NAMESPACE_PACKAGE_DIR": "stactools/gedi_calval_copc",
+        "DOCKER_NAMESPACE_PACKAGE_DIR": "stactools/panama_copc",
         "DOCKER_WORKDIR": "/workspace"
       }
     },

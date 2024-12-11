@@ -1,14 +1,14 @@
 [project]
-name = "stactools-gedi-calval-copc"
+name = "stactools-panama-copc"
 version = "1.0.0"
-description = "This is a stactools package for GEDI Cal/Val LiDAR data to COPC conversion"
+description = ""
 readme = "README.md"
 authors = [
     { name = "Jamison French", email = "jamison@developmentseed.org" },
     { name = "Rajat Shinde", email = "rs0170@uah.edu"}
 ]
 maintainers = [{ name = "Jamison French", email = "jamison@developmentseed.org" }]
-keywords = ["stactools", "pystac", "catalog", "STAC", "GEDI", "COPC"]
+keywords = ["stactools", "pystac", "catalog", "STAC", "PANAMA", "COPC"]
 license = { text = "Apache-2.0" }
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -43,8 +43,8 @@ dev = [
 docs = ["pystac~=1.8", "ipykernel~=6.25", "jinja2~=3.1"]
 
 [project.urls]
-Github = "https://github.com/stactools-packges/gedi-calval-copc"
-Issues = "https://github.com/stactools-packges/gedi-calval-copc/issues"
+Github = "https://github.com/stactools-packges/panama-copc"
+Issues = "https://github.com/stactools-packges/panama-copc/issues"
 
 [build-system]
 requires = ["setuptools", "wheel"]

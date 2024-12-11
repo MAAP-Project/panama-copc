@@ -25,4 +25,4 @@ number as needed.
 
 - Nothing.
 
-[Unreleased]: <https://github.com/stactools-packages/gedi-calval-copc/tree/main/>
+[Unreleased]: <https://github.com/stactools-packages/panama-copc/tree/main/>
