@@ -1,0 +1,906 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003",
+  "properties": {
+    "start_datetime": "2019-09-13T14:00:00Z",
+    "end_datetime": "2019-09-13T23:59:59Z",
+    "pc:density": 3.600434321,
+    "pc:schemas": [
+      {
+        "name": "X",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Y",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Z",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Intensity",
+        "size": 2,
+        "type": "unsigned"
+      },
+      {
+        "name": "ReturnNumber",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "NumberOfReturns",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ScanDirectionFlag",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "EdgeOfFlightLine",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "Classification",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ScanAngleRank",
+        "size": 4,
+        "type": "floating"
+      },
+      {
+        "name": "UserData",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "PointSourceId",
+        "size": 2,
+        "type": "unsigned"
+      },
+      {
+        "name": "GpsTime",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "ScanChannel",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ClassFlags",
+        "size": 1,
+        "type": "unsigned"
+      }
+    ],
+    "pc:statistics": [
+      {
+        "name": "X",
+        "position": 0,
+        "average": 506769.7222,
+        "count": 5657309,
+        "maximum": 509500.66,
+        "minimum": 503929.78,
+        "stddev": 1630.516234,
+        "variance": 2658583.19
+      },
+      {
+        "name": "Y",
+        "position": 1,
+        "average": 3517146.426,
+        "count": 5657309,
+        "maximum": 3518029.79,
+        "minimum": 3516243.58,
+        "stddev": 321.880883,
+        "variance": 103607.3028
+      },
+      {
+        "name": "Z",
+        "position": 2,
+        "average": 1027.722908,
+        "count": 5657309,
+        "maximum": 2558.8,
+        "minimum": -219.8,
+        "stddev": 34.98548734,
+        "variance": 1223.984325
+      },
+      {
+        "name": "Intensity",
+        "position": 3,
+        "average": 14.83757118,
+        "count": 5657309,
+        "maximum": 28,
+        "minimum": 1,
+        "stddev": 4.333740169,
+        "variance": 18.78130385
+      },
+      {
+        "name": "ReturnNumber",
+        "position": 4,
+        "average": 1.027694793,
+        "count": 5657309,
+        "maximum": 3,
+        "minimum": 1,
+        "stddev": 0.1645164754,
+        "variance": 0.02706567068
+      },
+      {
+        "name": "NumberOfReturns",
+        "position": 5,
+        "average": 1.055389585,
+        "count": 5657309,
+        "maximum": 3,
+        "minimum": 1,
+        "stddev": 0.2296414875,
+        "variance": 0.05273521277
+      },
+      {
+        "name": "ScanDirectionFlag",
+        "position": 6,
+        "average": 0.5004902508,
+        "count": 5657309,
+        "maximum": 1,
+        "minimum": 0,
+        "stddev": 0.4999998038,
+        "variance": 0.2499998038
+      },
+      {
+        "name": "EdgeOfFlightLine",
+        "position": 7,
+        "average": 0.001648310177,
+        "count": 5657309,
+        "maximum": 1,
+        "minimum": 0,
+        "stddev": 0.04056591601,
+        "variance": 0.001645593542
+      },
+      {
+        "name": "Classification",
+        "position": 8,
+        "average": 1.953805246,
+        "count": 5657309,
+        "maximum": 2,
+        "minimum": 1,
+        "stddev": 0.2099066623,
+        "variance": 0.04406080688
+      },
+      {
+        "name": "ScanAngleRank",
+        "position": 9,
+        "average": 1.434769563,
+        "count": 5657309,
+        "maximum": 30,
+        "minimum": -19.99799919,
+        "stddev": 11.4681741,
+        "variance": 131.5190172
+      },
+      {
+        "name": "UserData",
+        "position": 10,
+        "average": 0,
+        "count": 5657309,
+        "maximum": 0,
+        "minimum": 0,
+        "stddev": 0,
+        "variance": 0
+      },
+      {
+        "name": "PointSourceId",
+        "position": 11,
+        "average": 9011,
+        "count": 5657309,
+        "maximum": 9011,
+        "minimum": 9011,
+        "stddev": 0,
+        "variance": 0
+      },
+      {
+        "name": "GpsTime",
+        "position": 12,
+        "average": 496495.221,
+        "count": 5657309,
+        "maximum": 496550.4183,
+        "minimum": 496440.0809,
+        "stddev": 31.95316387,
+        "variance": 1021.004681
+      },
+      {
+        "name": "ScanChannel",
+        "position": 13,
+        "average": 0,
+        "count": 5657309,
+        "maximum": 0,
+        "minimum": 0,
+        "stddev": 0,
+        "variance": 0
+      },
+      {
+        "name": "ClassFlags",
+        "position": 14,
+        "average": 0,
+        "count": 5657309,
+        "maximum": 0,
+        "minimum": 0,
+        "stddev": 0,
+        "variance": 0
+      }
+    ],
+    "pc:encoding": "LASzip",
+    "pc:count": 5657309,
+    "pc:type": "lidar",
+    "proj:projjson": {
+      "type": "CompoundCRS",
+      "name": "WGS 84 / UTM zone 12N + unknown",
+      "components": [
+        {
+          "type": "ProjectedCRS",
+          "name": "WGS 84 / UTM zone 12N",
+          "base_crs": {
+            "name": "WGS 84",
+            "datum": {
+              "type": "GeodeticReferenceFrame",
+              "name": "World Geodetic System 1984",
+              "ellipsoid": {
+                "name": "WGS 84",
+                "semi_major_axis": 6378137,
+                "inverse_flattening": 298.257223563
+              }
+            },
+            "coordinate_system": {
+              "subtype": "ellipsoidal",
+              "axis": [
+                {
+                  "name": "Geodetic latitude",
+                  "abbreviation": "Lat",
+                  "direction": "north",
+                  "unit": "degree"
+                },
+                {
+                  "name": "Geodetic longitude",
+                  "abbreviation": "Lon",
+                  "direction": "east",
+                  "unit": "degree"
+                }
+              ]
+            },
+            "id": {
+              "authority": "EPSG",
+              "code": 4326
+            }
+          },
+          "conversion": {
+            "name": "UTM zone 12N",
+            "method": {
+              "name": "Transverse Mercator",
+              "id": {
+                "authority": "EPSG",
+                "code": 9807
+              }
+            },
+            "parameters": [
+              {
+                "name": "Latitude of natural origin",
+                "value": 0,
+                "unit": "degree",
+                "id": {
+                  "authority": "EPSG",
+                  "code": 8801
+                }
+              },
+              {
+                "name": "Longitude of natural origin",
+                "value": -111,
+                "unit": "degree",
+                "id": {
+                  "authority": "EPSG",
+                  "code": 8802
+                }
+              },
+              {
+                "name": "Scale factor at natural origin",
+                "value": 0.9996,
+                "unit": "unity",
+                "id": {
+                  "authority": "EPSG",
+                  "code": 8805
+                }
+              },
+              {
+                "name": "False easting",
+                "value": 500000,
+                "unit": "metre",
+                "id": {
+                  "authority": "EPSG",
+                  "code": 8806
+                }
+              },
+              {
+                "name": "False northing",
+                "value": 0,
+                "unit": "metre",
+                "id": {
+                  "authority": "EPSG",
+                  "code": 8807
+                }
+              }
+            ]
+          },
+          "coordinate_system": {
+            "subtype": "Cartesian",
+            "axis": [
+              {
+                "name": "Easting",
+                "abbreviation": "",
+                "direction": "east",
+                "unit": "metre"
+              },
+              {
+                "name": "Northing",
+                "abbreviation": "",
+                "direction": "north",
+                "unit": "metre"
+              }
+            ]
+          },
+          "id": {
+            "authority": "EPSG",
+            "code": 32612
+          }
+        },
+        {
+          "type": "VerticalCRS",
+          "name": "unknown",
+          "datum": {
+            "type": "VerticalReferenceFrame",
+            "name": "unknown"
+          },
+          "coordinate_system": {
+            "subtype": "vertical",
+            "axis": [
+              {
+                "name": "Up",
+                "abbreviation": "",
+                "direction": "up",
+                "unit": "metre"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "proj:bbox": [
+      503929.78,
+      3516243.58,
+      -219.8,
+      509500.66,
+      3518029.79,
+      2558.8
+    ],
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            504043.32690878,
+            3516117.12497994
+          ],
+          [
+            504213.72886306,
+            3516215.50659414
+          ],
+          [
+            504327.33016591,
+            3516510.65143673
+          ],
+          [
+            504497.73212019,
+            3516609.03305093
+          ],
+          [
+            504668.13407447,
+            3516510.65143673
+          ],
+          [
+            504810.13570303,
+            3516559.84224383
+          ],
+          [
+            504923.73700588,
+            3516461.46062963
+          ],
+          [
+            505094.13896016,
+            3516559.84224383
+          ],
+          [
+            505576.94449728,
+            3516510.65143673
+          ],
+          [
+            505690.54580014,
+            3516609.03305093
+          ],
+          [
+            505917.74840584,
+            3516609.03305093
+          ],
+          [
+            506116.55068583,
+            3516461.46062963
+          ],
+          [
+            506258.5523144,
+            3516510.65143673
+          ],
+          [
+            506372.15361725,
+            3516412.26982253
+          ],
+          [
+            506514.15524581,
+            3516461.46062963
+          ],
+          [
+            506542.55557153,
+            3516609.03305093
+          ],
+          [
+            506712.9575258,
+            3516510.65143673
+          ],
+          [
+            507706.96892576,
+            3516559.84224383
+          ],
+          [
+            507820.57022861,
+            3516461.46062963
+          ],
+          [
+            508047.77283431,
+            3516461.46062963
+          ],
+          [
+            508161.37413717,
+            3516559.84224383
+          ],
+          [
+            508303.37576573,
+            3516510.65143673
+          ],
+          [
+            508331.77609144,
+            3516658.22385803
+          ],
+          [
+            508558.97869715,
+            3516658.22385803
+          ],
+          [
+            508899.7826057,
+            3516461.46062963
+          ],
+          [
+            509098.5848857,
+            3516609.03305093
+          ],
+          [
+            509240.58651426,
+            3516559.84224383
+          ],
+          [
+            509410.98846854,
+            3516658.22385803
+          ],
+          [
+            509496.18944568,
+            3516510.65143673
+          ],
+          [
+            509609.79074853,
+            3516707.41466513
+          ],
+          [
+            509496.18944568,
+            3516904.17789352
+          ],
+          [
+            509524.58977139,
+            3517642.04
+          ],
+          [
+            509325.7874914,
+            3517789.6124213
+          ],
+          [
+            509098.5848857,
+            3517789.6124213
+          ],
+          [
+            508984.98358284,
+            3517691.2308071
+          ],
+          [
+            508246.57511431,
+            3517789.6124213
+          ],
+          [
+            507877.37088004,
+            3517642.04
+          ],
+          [
+            507706.96892576,
+            3517740.4216142
+          ],
+          [
+            507394.56534292,
+            3517691.2308071
+          ],
+          [
+            507280.96404006,
+            3517789.6124213
+          ],
+          [
+            507110.56208579,
+            3517691.2308071
+          ],
+          [
+            506712.9575258,
+            3517691.2308071
+          ],
+          [
+            506599.35622295,
+            3517789.6124213
+          ],
+          [
+            506372.15361725,
+            3517789.6124213
+          ],
+          [
+            506258.5523144,
+            3517691.2308071
+          ],
+          [
+            505860.94775441,
+            3517691.2308071
+          ],
+          [
+            505747.34645156,
+            3517789.6124213
+          ],
+          [
+            505520.14384586,
+            3517789.6124213
+          ],
+          [
+            505406.54254301,
+            3517691.2308071
+          ],
+          [
+            504327.33016591,
+            3517789.6124213
+          ],
+          [
+            504156.92821163,
+            3517691.2308071
+          ],
+          [
+            504156.92821163,
+            3517494.4675787
+          ],
+          [
+            503958.12593164,
+            3517346.89515741
+          ],
+          [
+            503986.52625736,
+            3516805.79627932
+          ],
+          [
+            503872.9249545,
+            3516707.41466513
+          ],
+          [
+            503872.9249545,
+            3516215.50659414
+          ],
+          [
+            504043.32690878,
+            3516117.12497994
+          ]
+        ]
+      ]
+    },
+    "proj:wkt2": "PROJCRS[\"WGS 84 / UTM zone 12N\",BASEGEOGCRS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"EPSG\",4326]],CONVERSION[\"UTM zone 12N\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",-111,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",0.9996,SCALEUNIT[\"unity\",1],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",500000,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"easting\",east,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"northing\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],ID[\"EPSG\",32612]]",
+    "datetime": null
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -110.95729462767963,
+          31.78059144847368
+        ],
+        [
+          -110.95549442798043,
+          31.781478443214404
+        ],
+        [
+          -110.9542932570197,
+          31.78414085035362
+        ],
+        [
+          -110.9524929599157,
+          31.785027802080805
+        ],
+        [
+          -110.95069357053583,
+          31.784139507512663
+        ],
+        [
+          -110.9491934585657,
+          31.784582723173177
+        ],
+        [
+          -110.9479940542359,
+          31.783694628377756
+        ],
+        [
+          -110.94619370578123,
+          31.784581491062127
+        ],
+        [
+          -110.94109440784727,
+          31.78413542915833
+        ],
+        [
+          -110.93989393846334,
+          31.78502247873468
+        ],
+        [
+          -110.93749412525163,
+          31.785021323439533
+        ],
+        [
+          -110.93539521455786,
+          31.78368886015738
+        ],
+        [
+          -110.93389503720174,
+          31.784131895558826
+        ],
+        [
+          -110.93269578515721,
+          31.783243656810495
+        ],
+        [
+          -110.93119560218254,
+          31.78368666043577
+        ],
+        [
+          -110.9308946396598,
+          31.78501791319273
+        ],
+        [
+          -110.92909545750528,
+          31.784129313714665
+        ],
+        [
+          -110.91859599037937,
+          31.784566840227544
+        ],
+        [
+          -110.9173968792953,
+          31.78367845769198
+        ],
+        [
+          -110.91499710199956,
+          31.783676878505627
+        ],
+        [
+          -110.9137963899398,
+          31.784563681746157
+        ],
+        [
+          -110.91229693386948,
+          31.784118852761047
+        ],
+        [
+          -110.91199569925884,
+          31.785450060304946
+        ],
+        [
+          -110.90959587655003,
+          31.78544837925484
+        ],
+        [
+          -110.90599793888562,
+          31.78367055380415
+        ],
+        [
+          -110.90389675748983,
+          31.785000400813274
+        ],
+        [
+          -110.90239734208065,
+          31.784555455373198
+        ],
+        [
+          -110.9005965432457,
+          31.785441672536834
+        ],
+        [
+          -110.8996980473789,
+          31.78410955287154
+        ],
+        [
+          -110.89849621439834,
+          31.785883820720624
+        ],
+        [
+          -110.89969421437941,
+          31.787659989625887
+        ],
+        [
+          -110.89938701930475,
+          31.79431681648532
+        ],
+        [
+          -110.9014856518019,
+          31.795649870570966
+        ],
+        [
+          -110.90388573752082,
+          31.795651704979296
+        ],
+        [
+          -110.90508668754666,
+          31.79476499718762
+        ],
+        [
+          -110.91288606084727,
+          31.795658181071033
+        ],
+        [
+          -110.91678739471256,
+          31.794329377281766
+        ],
+        [
+          -110.9185866560987,
+          31.795218149367997
+        ],
+        [
+          -110.92188713345142,
+          31.79477641251925
+        ],
+        [
+          -110.92308643059792,
+          31.795664751521414
+        ],
+        [
+          -110.92488721403602,
+          31.794778217698287
+        ],
+        [
+          -110.92908732729542,
+          31.794780626191645
+        ],
+        [
+          -110.93028669350308,
+          31.79566889747515
+        ],
+        [
+          -110.93268678145871,
+          31.79567018897485
+        ],
+        [
+          -110.93388745733064,
+          31.79478320910216
+        ],
+        [
+          -110.93808757160076,
+          31.794785320702132
+        ],
+        [
+          -110.93928702410092,
+          31.795673507317538
+        ],
+        [
+          -110.9416871125962,
+          31.795674629157958
+        ],
+        [
+          -110.94288770271523,
+          31.79478756430577
+        ],
+        [
+          -110.954287579222,
+          31.795679776560295
+        ],
+        [
+          -110.95608806579845,
+          31.794792801121158
+        ],
+        [
+          -110.95608890507533,
+          31.79301758277614
+        ],
+        [
+          -110.95818952230731,
+          31.791686875556934
+        ],
+        [
+          -110.95789173693075,
+          31.786804922555472
+        ],
+        [
+          -110.95909205776215,
+          31.78591770342175
+        ],
+        [
+          -110.95909401161376,
+          31.78147965026383
+        ],
+        [
+          -110.95729462767963,
+          31.78059144847368
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GEDI CalVal Lidar COPC"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GEDI CalVal Lidar COPC"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "GEDI CalVal Lidar COPC"
+    }
+  ],
+  "assets": {
+    "copc.laz": {
+      "href": "../../tests/data/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.copc.laz",
+      "type": "application/vnd.laszip+copc",
+      "title": "COPC LAZ file",
+      "description": "Cloud Optimized Point Cloud (COPC) converted GEDI CalVal Airborne Lidar LAS data.",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "bbox": [
+    -110.9584934,
+    31.78169997,
+    -219.8,
+    -110.899636,
+    31.79784812,
+    2558.8
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/pointcloud/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "collection": "GEDI_CalVal_Lidar_COPC"
+}

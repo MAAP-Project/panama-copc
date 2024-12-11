@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+
+import shutil
+from pathlib import Path
+
+import stactools.gedi_calval_copc.stac
+from pystac import CatalogType
+
+root = Path(__file__).parents[1]
+examples = root / "examples"
+
+collection = stactools.gedi_calval_copc.stac.create_collection()
+item = stactools.gedi_calval_copc.stac.create_item(
+    source=str(
+        root
+        / "tests"
+        / "data"
+        / "usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.copc.laz"
+    ),
+    destination=str(
+        examples
+        / "usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.json"
+    ),
+)
+collection.add_item(item)
+collection.normalize_hrefs(str(examples))
+collection.make_all_asset_hrefs_relative()
+if examples.exists():
+    shutil.rmtree(examples)
+    examples.mkdir()
+collection.save(CatalogType.SELF_CONTAINED)
