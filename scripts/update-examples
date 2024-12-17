@@ -9,18 +9,14 @@ from pystac import CatalogType
 root = Path(__file__).parents[1]
 examples = root / "examples"
 
+    #"https://smithsonian.dataone.org/datasets/ALS_Panama_2023/01_Agua_Salud_Alfagia/02_LAZ_Unclassified/230527_163013.laz",
 collection = stactools.panama_copc.stac.create_collection()
 item = stactools.panama_copc.stac.create_item(
-    source=str(
-        root
-        / "tests"
-        / "data"
-        / "usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.copc.laz"
-    ),
+    source="tests/data/230526_200655.copc.laz",
     destination=str(
         examples
-        / "usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.json"
-    ),
+        / "230526_200655.json"
+    )
 )
 collection.add_item(item)
 collection.normalize_hrefs(str(examples))

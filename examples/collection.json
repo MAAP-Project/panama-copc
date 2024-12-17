@@ -1,201 +1,176 @@
 {
   "type": "Collection",
-  "id": "GEDI_CalVal_Lidar_COPC",
+  "id": "ALS_Panama_COPC_Unclassified",
   "stac_version": "1.0.0",
-  "description": "Cloud Optimized Point Cloud (COPC) version for the Global Ecosystem Dynamics Investigation (GEDI) Calibration/Validation Airborne Lidar Dataset",
+  "description": "The work, funded by Smithsonian ForestGEO and NASA JPL, consists of the LiDAR survey of an area of 3825.24 hectares in several areas about of the Panama Canal from the south to the Atlantic coast. This survey aims to obtain digital models for the definition of reality terrain and surface and the very dense mapping of vegetation. On LiDAR technology, a Fullwave Form sensor.",
   "links": [
     {
       "rel": "root",
       "href": "./collection.json",
       "type": "application/json",
-      "title": "GEDI CalVal Lidar COPC"
+      "title": "ALS Panama COPC Unclassified"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.60635/C34W2W"
+    },
+    {
+      "rel": "license",
+      "href": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "CC-BY-4.0"
+    },
+    {
+      "rel": "cite-as",
+      "href": "https://doi.org/10.60635/C34W2W",
+      "title": "DOI"
     },
     {
       "rel": "item",
-      "href": "./usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.json",
+      "href": "./230526_200655/230526_200655.json",
       "type": "application/json"
     }
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/pointcloud/v1.0.0/schema.json",
     "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ],
+  "sci:citation": "ForestGEO Smithsonian. (2024). 2023 high-resolution airborne LiDAR data for Barro Colorado Island and other Smithsonian ForestGEO Sites in Central Panama. Smithsonian Research Data Repository.",
+  "sci:doi": "10.60635/C34W2W",
   "item_assets": {
     "copc.laz": {
       "title": "COPC LAZ file",
-      "description": "Cloud Optimized Point Cloud (COPC) converted GEDI CalVal Airborne Lidar LAS data.",
+      "description": "Cloud Optimized Point Cloud (COPC)",
       "type": "application/vnd.laszip+copc",
       "roles": [
         "data"
       ]
+    },
+    "PO.txt": {
+      "title": "PO file",
+      "description": "PO text metadata file",
+      "type": "text/plain",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "stat.log": {
+      "title": "stat log file",
+      "description": "stat log metadata file",
+      "type": "text/plain",
+      "roles": [
+        "metadata"
+      ]
     }
   },
-  "title": "GEDI CalVal Lidar COPC",
+  "title": "ALS Panama COPC Unclassified",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -85.3121431,
-          9.1557835,
-          -79.846044,
-          9.1274357
+          -79.87191537940562,
+          9.132262269654667,
+          -79.81748861392951,
+          9.179793057228403
         ],
         [
-          -88.5533271,
-          46.6775162,
-          -88.4704196,
-          46.6076283
+          -79.781912,
+          9.33379,
+          -79.778995,
+          9.336684
         ],
         [
-          -115.8458579,
-          45.271288,
-          -115.6760494,
-          44.6299228
+          -79.77962801639599,
+          9.186050571859713,
+          -79.71514599035866,
+          9.238603428459562
         ],
         [
-          -116.8360319,
-          48.3745398,
-          -116.7375511,
-          48.3440162
+          -79.83060200642741,
+          9.178801568981758,
+          -79.82768599353687,
+          9.18126043100854
         ],
         [
-          -116.4114544,
-          47.8405382,
-          -116.1978039,
-          47.7426007
+          -79.75432699728182,
+          9.153464571219999,
+          -79.74086800058708,
+          9.163959426949997
         ],
         [
-          -115.7402841,
-          46.4369485,
-          -115.5648893,
-          46.3155705
+          -79.64024496988135,
+          9.0610425752265,
+          -79.6373300299675,
+          9.06393941894969
         ],
         [
-          -123.4971471,
-          38.8005092,
-          -122.4711968,
-          38.2240142
+          -79.66440097657673,
+          9.083051574189328,
+          -79.6614860235188,
+          9.085948425829514
         ],
         [
-          -122.4348301,
-          36.9804709,
-          -119.0221486,
-          36.8508176
+          -79.60330493865827,
+          8.941723582093845,
+          -79.6003910612002,
+          8.9446204239737
         ],
         [
-          -115.7605506,
-          45.0384903,
-          -115.736248,
-          44.9979642
+          -79.8592858642689,
+          9.09852096467,
+          -79.84903413582397,
+          9.12116349731504
         ],
         [
-          -116.6695944,
-          47.8380691,
-          -116.189556,
-          47.6349606
-        ],
-        [
-          -116.9861954,
-          46.8653832,
-          -116.6481306,
-          46.7700198
-        ],
-        [
-          -116.1911687,
-          45.7158832,
-          -115.9755629,
-          45.4942469
-        ],
-        [
-          -116.5511833,
-          47.7487417,
-          -116.4851769,
-          47.7199618
-        ],
-        [
-          142.3844159,
-          -25.4003433,
-          147.6189914,
-          -25.7895408
-        ],
-        [
-          -115.8361112,
-          46.1023891,
-          -115.6613919,
-          45.9403881
-        ],
-        [
-          -116.3522009,
-          47.2886779,
-          -116.0289725,
-          47.1331918
-        ],
-        [
-          -116.8478416,
-          48.3746815,
-          -116.7352503,
-          48.3361686
-        ],
-        [
-          -119.1464948,
-          44.2509373,
-          -118.9489381,
-          44.0783967
-        ],
-        [
-          -115.1613612,
-          44.3453846,
-          -115.0242097,
-          44.2645588
-        ],
-        [
-          145.6299423,
-          -17.1178027,
-          145.6346743,
-          -17.1223529
-        ],
-        [
-          -115.8264022,
-          46.6482542,
-          -114.3722411,
-          45.6475094
-        ],
-        [
-          11.4235832,
-          46.0038111,
-          11.4271766,
-          46.0012677
-        ],
-        [
-          9.3157507,
-          0.6173897,
-          9.4229706,
-          0.5382093
-        ],
-        [
-          111.2892479,
-          -30.0833467,
-          155.7179351,
-          -43.1031025
+          -79.98132691460196,
+          9.27855562355809,
+          -79.97092687796511,
+          9.286259571570373
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2001-01-01T00:00:00Z",
-          null
+          "2023-05-26T00:00:00Z",
+          "2023-05-27T23:59:59Z"
         ]
       ]
     }
   },
-  "license": "proprietary",
+  "license": "CC-BY-4.0",
   "keywords": [
-    "LIDAR",
-    "GEDI",
-    "CALVAL",
+    "ALS",
     "COPC",
-    "POINTCLOUD"
+    "Point Cloud",
+    "Unclassified",
+    "Airborne lidar scanning",
+    "Tropical forest",
+    "Remote sensing",
+    "Panama",
+    "Photogrammetry",
+    "Aboveground biomass (AGB)",
+    "Forest structure",
+    "Smithsonian ForestGEO",
+    "Barro Colorado Island",
+    "Agua Salud"
+  ],
+  "providers": [
+    {
+      "name": "ForestGEO Smithsonian",
+      "roles": [
+        "producer",
+        "licensor"
+      ],
+      "url": "https://forestgeo.si.edu/"
+    },
+    {
+      "name": "Smithsonian Research Data Repository",
+      "roles": [
+        "host"
+      ],
+      "url": "https://smithsonian.dataone.org/"
+    }
   ]
 }

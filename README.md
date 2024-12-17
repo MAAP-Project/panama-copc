@@ -11,7 +11,7 @@
 ## STAC examples
 
 - [Collection](examples/collection.json)
-- [Item](examples/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.json)
+- [Item](examples/230526_200655/230526_200655.json)
 
 ## Installation
 
@@ -27,7 +27,7 @@ For generating STAC items from COPC files, use the following command:
 
 ```shell
 stac panamacopc create-item <source> <destination>
-stac panamacopc create-item tests/data/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.copc.laz examples
+stac panamacopc create-item tests/data/230526_200655.copc.laz examples
 ```
 
 For converting LAS files to COPC.LAZ, use the '--copc' flag
@@ -36,7 +36,7 @@ using the COPC.LAZ destination location:
 
 ```shell
 stac panamacopc create-item <source> <destination> --copc
-stac panamacopc create-item tests/data/usa_neonsrer_2019_NEON_D14_SRER_DP1_L090-1_2019091314_unclassified_point_cloud_0000003.las examples -copc
+stac panamacopc create-item tests/data/230526_200655.laz examples -copc
 ```
 
 Use `stac panama-copc --help` to see all subcommands and options.
