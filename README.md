@@ -6,7 +6,8 @@
 - Owner: @jjfrench @omshinde
 - STAC extensions used:
   - [proj](https://github.com/stac-extensions/projection/)
-  - [pointcloud](htts://github.com/stac-extensions/pointcloud/)
+  - [pointcloud](https://github.com/stac-extensions/pointcloud/)
+  - [scientific](https://github.com/stac-extensions/scientific)
 
 ## STAC examples
 
