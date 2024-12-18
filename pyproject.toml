@@ -16,15 +16,13 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
     "Natural Language :: English",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "stactools>=0.5.0",
-    "pystac>=1.11.0,<2.0.0",
+    "stactools>=0.4.0",
     "s3fs", 
     "requests",
     "pdal",
@@ -41,7 +39,7 @@ dev = [
     "pytest~=7.4",
     "ruff==0.0.288",
 ]
-docs = ["pystac~=1.11", "ipykernel~=6.25", "jinja2~=3.1"]
+docs = ["pystac~=1.8", "ipykernel~=6.25", "jinja2~=3.1"]
 
 [project.urls]
 Github = "https://github.com/stactools-packges/panama-copc"
