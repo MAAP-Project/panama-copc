@@ -100,6 +100,8 @@ def create_item(source: str, destination: str, copc: bool = False) -> Item:
     if copc:
         source = convert_to_copc(source, destination)
 
+    acquisition_area = lambda url: url.rsplit('/', 3)[1][3:]
+
     _metadata = Metadata(source)
     item = Item(
         id=_metadata.id,
@@ -111,6 +113,8 @@ def create_item(source: str, destination: str, copc: bool = False) -> Item:
         end_datetime=datetime(2023, 5, 27, 23, 59, 59, tzinfo=timezone.utc),
         stac_extensions=[],
     )
+
+    item.properties["acquisition_area"] = acquisition_area(source)
 
     item.add_asset(
         path.basename(source).split(".", 1)[1],
