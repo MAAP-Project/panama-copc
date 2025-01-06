@@ -98,6 +98,7 @@ def create_item(source: str, destination: str, copc: bool = False) -> Item:
         Item: STAC Item object
     """
     if copc:
+        original_source = source
         source = convert_to_copc(source, destination)
 
     acquisition_area = lambda url: url.rsplit('/', 3)[1][3:]
@@ -114,7 +115,7 @@ def create_item(source: str, destination: str, copc: bool = False) -> Item:
         stac_extensions=[],
     )
 
-    item.properties["acquisition_area"] = acquisition_area(source)
+    item.properties["acquisition_area"] = acquisition_area(original_source)
 
     item.add_asset(
         path.basename(source).split(".", 1)[1],
