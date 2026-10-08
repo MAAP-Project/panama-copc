@@ -3,11 +3,11 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - conda-forge::gdal>=3.3
-  - conda-forge::geos>=3.3
-  - conda-forge::rasterio>=1.3
+  - conda-forge::gdal>=3.13.3
+  - conda-forge::geos>=3.15.0
+  - conda-forge::rasterio>=1.5.2
   # - conda-forge::libstdcxx-ng # gdal dependency. Make sure it's from the same channel as gdal
   - conda-forge::libarchive # pdal dependency
   - conda-forge::pdal
   - conda-forge::python-pdal
-  - conda-forge::pyproj==3.5.0 # Python 3.8 compatibility
+  - conda-forge::pyproj==3.8.0 # Python 3.8 compatibility
